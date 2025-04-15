@@ -34,7 +34,7 @@ Config::Config(){
 
 void Config::parse_arg(int argc, char*argv[]){
     int opt;
-    const char *str = "p:l:m:o:s:t:c:a:";
+    const char *str = "p:l:m:o:s:t:c:a:h";
     while ((opt = getopt(argc, argv, str)) != -1)
     {
         switch (opt)
@@ -67,6 +67,10 @@ void Config::parse_arg(int argc, char*argv[]){
         case 't':
         {
             thread_num = atoi(optarg);
+            if (thread_num <= 0) {
+            printf("错误：线程数必须大于0\n");
+            exit(EXIT_FAILURE);
+    }
             break;
         }
         case 'c':
@@ -79,8 +83,35 @@ void Config::parse_arg(int argc, char*argv[]){
             actor_model = atoi(optarg);
             break;
         }
+        case 'h':
+        {
+            printf("使用方法：./server [选项]\n");
+            printf("  -p <端口号>       设置服务器监听端口（默认9006）\n");
+            printf("  -l <日志方式>     0 = 同步日志，1 = 异步日志\n");
+            printf("  -m <触发模式>     0~3 表示LT/ET组合方式\n");
+            printf("  -o <优雅关闭>     0 = 关闭，1 = 启用\n");
+            printf("  -s <数据库连接数> 默认8\n");
+            printf("  -t <线程数>       默认8\n");
+            printf("  -c <关闭日志>     0 = 开启日志，1 = 关闭日志\n");
+            printf("  -a <并发模型>     0 = proactor，1 = reactor\n");
+            printf("  -h                显示帮助信息\n");
+            exit(0); // 显示完帮助后退出
+        }
+
         default:
+            printf("Unknown option: -%c\n", optopt);
             break;
         }
     }
+}
+void Config::print_config() {
+    printf("当前配置：\n");
+    printf("PORT = %d\n", PORT);
+    printf("LOGWrite = %d\n", LOGWrite);
+    printf("TRIGMode = %d\n", TRIGMode);
+    printf("OPT_LINGER = %d\n", OPT_LINGER);
+    printf("sql_num = %d\n", sql_num);
+    printf("thread_num = %d\n", thread_num);
+    printf("close_log = %d\n", close_log);
+    printf("actor_model = %d\n", actor_model);
 }

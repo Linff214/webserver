@@ -12,7 +12,7 @@ public:
     ~Config(){};
 
     void parse_arg(int argc, char*argv[]);
-
+    void Config::print_config();
     //端口号
     int PORT;
 

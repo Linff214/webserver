@@ -1,0 +1,317 @@
+2025-04-13 22:56:55.463686 [erro]: MySQL Error
+2025-04-13 23:13:45.855532 [erro]: MySQL Error
+2025-04-13 23:14:40.812951 [erro]: MySQL Error
+2025-04-13 23:20:37.732498 [erro]: MySQL Error
+2025-04-13 23:22:00.735717 [erro]: MySQL Error
+2025-04-13 23:32:59.894108 [erro]: MySQL Error
+2025-04-13 23:36:06.116664 [erro]: MySQL Error
+2025-04-13 23:36:19.108492 [erro]: MySQL Error
+2025-04-13 23:47:55.086665 [info]: timer tick
+2025-04-13 23:47:55.351747 [info]: deal with the client(127.0.0.1)
+2025-04-13 23:47:55.352143 [info]: adjust timer once
+2025-04-13 23:47:55.352418 [info]: GET / HTTP/1.1
+2025-04-13 23:47:55.352529 [info]: Host: localhost:9006
+2025-04-13 23:47:55.352576 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:55.352621 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:55.352657 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2025-04-13 23:47:55.352692 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2025-04-13 23:47:55.352727 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:55.352762 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:55.352798 [info]: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:55.352833 [info]: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:55.352868 [info]: Connection: keep-alive
+2025-04-13 23:47:55.352903 [info]: Upgrade-Insecure-Requests: 1
+2025-04-13 23:47:55.352938 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-04-13 23:47:55.352973 [info]: Sec-Fetch-Dest: document
+2025-04-13 23:47:55.353463 [info]: oop!unknow header: Sec-Fetch-Dest: document
+2025-04-13 23:47:55.353501 [info]: Sec-Fetch-Mode: navigate
+2025-04-13 23:47:55.353536 [info]: oop!unknow header: Sec-Fetch-Mode: navigate
+2025-04-13 23:47:55.353574 [info]: Sec-Fetch-Site: none
+2025-04-13 23:47:55.353610 [info]: oop!unknow header: Sec-Fetch-Site: none
+2025-04-13 23:47:55.353647 [info]: Sec-Fetch-User: ?1
+2025-04-13 23:47:55.353682 [info]: oop!unknow header: Sec-Fetch-User: ?1
+2025-04-13 23:47:55.353717 [info]: 
+2025-04-13 23:47:55.353828 [info]: request:HTTP/1.1 200 OK
+
+2025-04-13 23:47:55.353923 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2025-04-13 23:47:55.353959 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2025-04-13 23:47:55.353995 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2025-04-13 23:47:55.355868 [info]: send data to the client(127.0.0.1)
+2025-04-13 23:47:55.356190 [info]: adjust timer once
+2025-04-13 23:47:55.753956 [info]: deal with the client(127.0.0.1)
+2025-04-13 23:47:55.754228 [info]: adjust timer once
+2025-04-13 23:47:55.754394 [info]: GET /favicon.ico HTTP/1.1
+2025-04-13 23:47:55.754437 [info]: Host: localhost:9006
+2025-04-13 23:47:55.754476 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:55.754506 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:55.754535 [info]: Accept: image/avif,image/webp,*/*
+2025-04-13 23:47:55.754632 [info]: oop!unknow header: Accept: image/avif,image/webp,*/*
+2025-04-13 23:47:55.754687 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:55.754715 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:55.754743 [info]: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:55.754772 [info]: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:55.754800 [info]: Connection: keep-alive
+2025-04-13 23:47:55.754834 [info]: Referer: http://localhost:9006/
+2025-04-13 23:47:55.754866 [info]: oop!unknow header: Referer: http://localhost:9006/
+2025-04-13 23:47:55.754911 [info]: Sec-Fetch-Dest: image
+2025-04-13 23:47:55.754939 [info]: oop!unknow header: Sec-Fetch-Dest: image
+2025-04-13 23:47:55.754966 [info]: Sec-Fetch-Mode: no-cors
+2025-04-13 23:47:55.754993 [info]: oop!unknow header: Sec-Fetch-Mode: no-cors
+2025-04-13 23:47:55.755021 [info]: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:55.755047 [info]: oop!unknow header: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:55.755079 [info]: 
+2025-04-13 23:47:55.755163 [info]: request:HTTP/1.1 200 OK
+
+2025-04-13 23:47:55.755209 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+
+2025-04-13 23:47:55.755238 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2025-04-13 23:47:55.755266 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2025-04-13 23:47:55.757297 [info]: send data to the client(127.0.0.1)
+2025-04-13 23:47:55.757501 [info]: adjust timer once
+2025-04-13 23:47:56.869709 [info]: deal with the client(127.0.0.1)
+2025-04-13 23:47:56.870205 [info]: adjust timer once
+2025-04-13 23:47:56.870612 [info]: POST /0 HTTP/1.1
+2025-04-13 23:47:56.870944 [info]: Host: localhost:9006
+2025-04-13 23:47:56.870979 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:56.871010 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:56.871041 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2025-04-13 23:47:56.871072 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2025-04-13 23:47:56.871103 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:56.871134 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:56.871164 [info]: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:56.871193 [info]: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:56.871224 [info]: Content-Type: application/x-www-form-urlencoded
+2025-04-13 23:47:56.871255 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-04-13 23:47:56.871286 [info]: Content-Length: 0
+2025-04-13 23:47:56.871318 [info]: Origin: http://localhost:9006
+2025-04-13 23:47:56.871348 [info]: oop!unknow header: Origin: http://localhost:9006
+2025-04-13 23:47:56.871378 [info]: Connection: keep-alive
+2025-04-13 23:47:56.871410 [info]: Referer: http://localhost:9006/
+2025-04-13 23:47:56.871441 [info]: oop!unknow header: Referer: http://localhost:9006/
+2025-04-13 23:47:56.871472 [info]: Upgrade-Insecure-Requests: 1
+2025-04-13 23:47:56.871503 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-04-13 23:47:56.871533 [info]: Sec-Fetch-Dest: document
+2025-04-13 23:47:56.871563 [info]: oop!unknow header: Sec-Fetch-Dest: document
+2025-04-13 23:47:56.871594 [info]: Sec-Fetch-Mode: navigate
+2025-04-13 23:47:56.871625 [info]: oop!unknow header: Sec-Fetch-Mode: navigate
+2025-04-13 23:47:56.871655 [info]: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:56.871689 [info]: oop!unknow header: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:56.871718 [info]: Sec-Fetch-User: ?1
+2025-04-13 23:47:56.871747 [info]: oop!unknow header: Sec-Fetch-User: ?1
+2025-04-13 23:47:56.871777 [info]: 
+2025-04-13 23:47:56.871861 [info]: request:HTTP/1.1 200 OK
+
+2025-04-13 23:47:56.872049 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2025-04-13 23:47:56.872086 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+2025-04-13 23:47:56.872117 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+
+2025-04-13 23:47:56.874137 [info]: send data to the client(127.0.0.1)
+2025-04-13 23:47:56.874478 [info]: adjust timer once
+2025-04-13 23:47:57.082657 [info]: deal with the client(127.0.0.1)
+2025-04-13 23:47:57.083266 [info]: adjust timer once
+2025-04-13 23:47:57.083561 [info]: GET /favicon.ico HTTP/1.1
+2025-04-13 23:47:57.083615 [info]: Host: localhost:9006
+2025-04-13 23:47:57.083651 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:57.083685 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+2025-04-13 23:47:57.083719 [info]: Accept: image/avif,image/webp,*/*
+2025-04-13 23:47:57.083753 [info]: oop!unknow header: Accept: image/avif,image/webp,*/*
+2025-04-13 23:47:57.083786 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:57.083820 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2025-04-13 23:47:57.083854 [info]: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:57.083887 [info]: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2025-04-13 23:47:57.084016 [info]: Connection: keep-alive
+2025-04-13 23:47:57.084051 [info]: Referer: http://localhost:9006/0
+2025-04-13 23:47:57.084084 [info]: oop!unknow header: Referer: http://localhost:9006/0
+2025-04-13 23:47:57.084117 [info]: Sec-Fetch-Dest: image
+2025-04-13 23:47:57.084154 [info]: oop!unknow header: Sec-Fetch-Dest: image
+2025-04-13 23:47:57.084188 [info]: Sec-Fetch-Mode: no-cors
+2025-04-13 23:47:57.084221 [info]: oop!unknow header: Sec-Fetch-Mode: no-cors
+2025-04-13 23:47:57.084254 [info]: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:57.084287 [info]: oop!unknow header: Sec-Fetch-Site: same-origin
+2025-04-13 23:47:57.084320 [info]: 
+2025-04-13 23:47:57.084381 [info]: request:HTTP/1.1 200 OK
+
+2025-04-13 23:47:57.084422 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+
+2025-04-13 23:47:57.084456 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2025-04-13 23:47:57.084489 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2025-04-13 23:47:57.084998 [info]: send data to the client(127.0.0.1)
+2025-04-13 23:47:57.085140 [info]: adjust timer once
+2025-04-13 23:47:57.086531 [info]: close fd 16
+2025-04-13 23:48:00.086897 [info]: timer tick
+2025-04-13 23:48:05.087299 [info]: timer tick
+2025-04-13 23:48:10.087620 [info]: timer tick
+2025-04-13 23:48:15.088221 [info]: timer tick
+2025-04-13 23:48:20.088388 [info]: timer tick
+2025-04-13 23:48:25.088618 [info]: timer tick
+2025-04-13 23:48:30.089668 [info]: timer tick
+2025-04-13 23:48:35.090789 [info]: timer tick
+2025-04-13 23:48:40.091067 [info]: timer tick
+2025-04-13 23:48:45.091546 [info]: timer tick
+2025-04-13 23:48:50.092097 [info]: timer tick
+2025-04-13 23:48:55.092453 [info]: timer tick
+2025-04-13 23:49:00.092701 [info]: timer tick
+2025-04-13 23:49:05.092976 [info]: timer tick
+2025-04-13 23:49:10.093539 [info]: timer tick
+2025-04-13 23:49:15.093843 [info]: timer tick
+2025-04-13 23:49:20.094735 [info]: timer tick
+2025-04-13 23:49:25.095516 [info]: timer tick
+2025-04-13 23:49:30.095741 [info]: timer tick
+2025-04-13 23:49:35.096107 [info]: timer tick
+2025-04-13 23:49:40.096471 [info]: timer tick
+2025-04-13 23:49:45.096829 [info]: timer tick
+2025-04-13 23:49:50.097098 [info]: timer tick
+2025-04-13 23:49:55.097409 [info]: timer tick
+2025-04-13 23:50:00.097654 [info]: timer tick
+2025-04-13 23:50:05.097911 [info]: timer tick
+2025-04-13 23:50:10.098208 [info]: timer tick
+2025-04-13 23:50:15.098581 [info]: timer tick
+2025-04-13 23:50:20.098869 [info]: timer tick
+2025-04-13 23:50:25.099138 [info]: timer tick
+2025-04-13 23:50:30.099504 [info]: timer tick
+2025-04-13 23:50:35.099770 [info]: timer tick
+2025-04-13 23:50:40.100121 [info]: timer tick
+2025-04-13 23:50:45.100507 [info]: timer tick
+2025-04-13 23:50:50.100754 [info]: timer tick
+2025-04-13 23:50:55.101086 [info]: timer tick
+2025-04-13 23:51:00.101436 [info]: timer tick
+2025-04-13 23:51:05.101841 [info]: timer tick
+2025-04-13 23:51:10.102079 [info]: timer tick
+2025-04-13 23:51:15.102487 [info]: timer tick
+2025-04-13 23:51:20.102773 [info]: timer tick
+2025-04-13 23:51:25.103199 [info]: timer tick
+2025-04-13 23:51:30.103451 [info]: timer tick
+2025-04-13 23:51:35.103803 [info]: timer tick
+2025-04-13 23:51:40.104258 [info]: timer tick
+2025-04-13 23:51:45.104574 [info]: timer tick
+2025-04-13 23:51:50.104925 [info]: timer tick
+2025-04-13 23:51:55.105580 [info]: timer tick
+2025-04-13 23:52:00.106226 [info]: timer tick
+2025-04-13 23:52:05.106692 [info]: timer tick
+2025-04-13 23:52:10.107106 [info]: timer tick
+2025-04-13 23:52:15.107470 [info]: timer tick
+2025-04-13 23:52:20.107743 [info]: timer tick
+2025-04-13 23:52:25.108125 [info]: timer tick
+2025-04-13 23:52:30.108531 [info]: timer tick
+2025-04-13 23:52:35.108794 [info]: timer tick
+2025-04-13 23:52:40.109124 [info]: timer tick
+2025-04-13 23:52:45.109500 [info]: timer tick
+2025-04-13 23:52:50.109893 [info]: timer tick
+2025-04-13 23:52:55.110528 [info]: timer tick
+2025-04-13 23:53:00.110855 [info]: timer tick
+2025-04-13 23:53:05.111099 [info]: timer tick
+2025-04-13 23:53:10.111374 [info]: timer tick
+2025-04-13 23:53:15.111678 [info]: timer tick
+2025-04-13 23:53:20.112103 [info]: timer tick
+2025-04-13 23:53:25.112406 [info]: timer tick
+2025-04-13 23:53:30.112729 [info]: timer tick
+2025-04-13 23:53:35.113414 [info]: timer tick
+2025-04-13 23:53:40.113621 [info]: timer tick
+2025-04-13 23:53:45.113921 [info]: timer tick
+2025-04-13 23:53:50.114192 [info]: timer tick
+2025-04-13 23:53:55.114600 [info]: timer tick
+2025-04-13 23:54:00.114957 [info]: timer tick
+2025-04-13 23:54:05.115396 [info]: timer tick
+2025-04-13 23:54:10.115709 [info]: timer tick
+2025-04-13 23:54:15.116196 [info]: timer tick
+2025-04-13 23:54:20.116690 [info]: timer tick
+2025-04-13 23:54:25.116958 [info]: timer tick
+2025-04-13 23:54:30.117212 [info]: timer tick
+2025-04-13 23:54:35.117577 [info]: timer tick
+2025-04-13 23:54:40.117828 [info]: timer tick
+2025-04-13 23:54:45.118205 [info]: timer tick
+2025-04-13 23:54:50.118435 [info]: timer tick
+2025-04-13 23:54:55.118810 [info]: timer tick
+2025-04-13 23:55:00.119185 [info]: timer tick
+2025-04-13 23:55:05.119369 [info]: timer tick
+2025-04-13 23:55:10.119738 [info]: timer tick
+2025-04-13 23:55:15.120026 [info]: timer tick
+2025-04-13 23:55:20.120329 [info]: timer tick
+2025-04-13 23:55:25.120610 [info]: timer tick
+2025-04-13 23:55:30.120905 [info]: timer tick
+2025-04-13 23:55:35.121133 [info]: timer tick
+2025-04-13 23:55:40.121487 [info]: timer tick
+2025-04-13 23:55:45.121797 [info]: timer tick
+2025-04-13 23:55:50.122041 [info]: timer tick
+2025-04-13 23:55:55.122294 [info]: timer tick
+2025-04-13 23:56:00.122486 [info]: timer tick
+2025-04-13 23:56:05.122727 [info]: timer tick
+2025-04-13 23:56:10.123384 [info]: timer tick
+2025-04-13 23:56:15.123676 [info]: timer tick
+2025-04-13 23:56:20.124102 [info]: timer tick
+2025-04-13 23:56:25.124180 [info]: timer tick
+2025-04-13 23:56:30.124403 [info]: timer tick
+2025-04-13 23:56:35.124599 [info]: timer tick
+2025-04-13 23:56:40.125016 [info]: timer tick
+2025-04-13 23:56:45.125440 [info]: timer tick
+2025-04-13 23:56:50.125805 [info]: timer tick
+2025-04-13 23:56:55.126095 [info]: timer tick
+2025-04-13 23:57:00.126398 [info]: timer tick
+2025-04-13 23:57:05.126931 [info]: timer tick
+2025-04-13 23:57:10.127186 [info]: timer tick
+2025-04-13 23:57:15.127564 [info]: timer tick
+2025-04-13 23:57:20.127888 [info]: timer tick
+2025-04-13 23:57:25.128228 [info]: timer tick
+2025-04-13 23:57:30.128675 [info]: timer tick
+2025-04-13 23:57:35.128985 [info]: timer tick
+2025-04-13 23:57:40.129474 [info]: timer tick
+2025-04-13 23:57:45.129714 [info]: timer tick
+2025-04-13 23:57:50.129887 [info]: timer tick
+2025-04-13 23:57:55.130369 [info]: timer tick
+2025-04-13 23:58:00.130637 [info]: timer tick
+2025-04-13 23:58:05.130914 [info]: timer tick
+2025-04-13 23:58:10.131182 [info]: timer tick
+2025-04-13 23:58:15.131665 [info]: timer tick
+2025-04-13 23:58:20.131906 [info]: timer tick
+2025-04-13 23:58:25.132641 [info]: timer tick
+2025-04-13 23:58:30.133060 [info]: timer tick
+2025-04-13 23:58:35.133655 [info]: timer tick
+2025-04-13 23:58:40.133920 [info]: timer tick
+2025-04-13 23:58:45.134230 [info]: timer tick
+2025-04-13 23:58:50.134608 [info]: timer tick
+2025-04-13 23:58:55.134996 [info]: timer tick
+2025-04-13 23:59:00.135267 [info]: timer tick
+2025-04-13 23:59:05.135769 [info]: timer tick
+2025-04-13 23:59:10.136102 [info]: timer tick
+2025-04-13 23:59:15.136395 [info]: timer tick
+2025-04-13 23:59:20.136646 [info]: timer tick
+2025-04-13 23:59:25.137034 [info]: timer tick
+2025-04-13 23:59:30.137533 [info]: timer tick
+2025-04-13 23:59:35.137876 [info]: timer tick
+2025-04-13 23:59:40.138431 [info]: timer tick
+2025-04-13 23:59:45.138780 [info]: timer tick
+2025-04-13 23:59:50.139291 [info]: timer tick
+2025-04-13 23:59:55.139835 [info]: timer tick
