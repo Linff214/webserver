@@ -1,5 +1,8 @@
 #include "config.h"
-
+#include <iostream>
+#include <map>
+#include <functional>
+#include <stdexcept>
 Config::Config(){
     //端口号,默认9006
     PORT = 9006;
@@ -32,75 +35,79 @@ Config::Config(){
     actor_model = 0;
 }
 
-void Config::parse_arg(int argc, char*argv[]){
+void Config::parse_arg(int argc, char* argv[]) {
     int opt;
-    const char *str = "p:l:m:o:s:t:c:a:h";
-    while ((opt = getopt(argc, argv, str)) != -1)
-    {
-        switch (opt)
-        {
-        case 'p':
-        {
-            PORT = atoi(optarg);
-            break;
-        }
-        case 'l':
-        {
-            LOGWrite = atoi(optarg);
-            break;
-        }
-        case 'm':
-        {
-            TRIGMode = atoi(optarg);
-            break;
-        }
-        case 'o':
-        {
-            OPT_LINGER = atoi(optarg);
-            break;
-        }
-        case 's':
-        {
-            sql_num = atoi(optarg);
-            break;
-        }
-        case 't':
-        {
-            thread_num = atoi(optarg);
-            if (thread_num <= 0) {
-            printf("错误：线程数必须大于0\n");
-            exit(EXIT_FAILURE);
-    }
-            break;
-        }
-        case 'c':
-        {
-            close_log = atoi(optarg);
-            break;
-        }
-        case 'a':
-        {
-            actor_model = atoi(optarg);
-            break;
-        }
-        case 'h':
-        {
-            printf("使用方法：./server [选项]\n");
-            printf("  -p <端口号>       设置服务器监听端口（默认9006）\n");
-            printf("  -l <日志方式>     0 = 同步日志，1 = 异步日志\n");
-            printf("  -m <触发模式>     0~3 表示LT/ET组合方式\n");
-            printf("  -o <优雅关闭>     0 = 关闭，1 = 启用\n");
-            printf("  -s <数据库连接数> 默认8\n");
-            printf("  -t <线程数>       默认8\n");
-            printf("  -c <关闭日志>     0 = 开启日志，1 = 关闭日志\n");
-            printf("  -a <并发模型>     0 = proactor，1 = reactor\n");
-            printf("  -h                显示帮助信息\n");
-            exit(0); // 显示完帮助后退出
-        }
+    const char *optstring = "p:l:m:o:s:t:c:a:h";
 
-        default:
-            printf("Unknown option: -%c\n", optopt);
-            break;
+    // 用 map 来简化 switch-case
+    std::map<char, std::function<void(const char*)>> handlers;
+
+    handlers['p'] = [&](const char* arg) {
+        try {
+            PORT = std::stoi(arg);
+        } catch (...) {
+            std::cerr << "错误：无效的端口号。\n";
+            exit(EXIT_FAILURE);
+        }
+    };
+
+    handlers['l'] = [&](const char* arg) {
+        LOGWrite = std::stoi(arg);
+    };
+
+    handlers['m'] = [&](const char* arg) {
+        TRIGMode = std::stoi(arg);
+    };
+
+    handlers['o'] = [&](const char* arg) {
+        OPT_LINGER = std::stoi(arg);
+    };
+
+    handlers['s'] = [&](const char* arg) {
+        sql_num = std::stoi(arg);
+        if (sql_num <= 0) {
+            std::cerr << "错误：数据库连接池数必须大于0。\n";
+            exit(EXIT_FAILURE);
+        }
+    };
+
+    handlers['t'] = [&](const char* arg) {
+        thread_num = std::stoi(arg);
+        if (thread_num <= 0) {
+            std::cerr << "错误：线程数必须大于0。\n";
+            exit(EXIT_FAILURE);
+        }
+    };
+
+    handlers['c'] = [&](const char* arg) {
+        close_log = std::stoi(arg);
+    };
+
+    handlers['a'] = [&](const char* arg) {
+        actor_model = std::stoi(arg);
+    };
+
+    // 帮助信息
+    handlers['h'] = [&](const char*) {
+        std::cout << "使用方法：./server [选项]\n"
+                  << "  -p <端口号>       设置服务器监听端口（默认9006）\n"
+                  << "  -l <日志方式>     0 = 同步日志，1 = 异步日志\n"
+                  << "  -m <触发模式>     0~3 表示LT/ET组合方式\n"
+                  << "  -o <优雅关闭>     0 = 关闭，1 = 启用\n"
+                  << "  -s <数据库连接数> 默认8\n"
+                  << "  -t <线程数>       默认8\n"
+                  << "  -c <关闭日志>     0 = 开启日志，1 = 关闭日志\n"
+                  << "  -a <并发模型>     0 = proactor，1 = reactor\n"
+                  << "  -h                显示帮助信息\n";
+        exit(0);
+    };
+    // 主循环：解析参数并自动执行相应设置函数
+    while ((opt = getopt(argc, argv, optstring)) != -1) {
+        if (handlers.count(opt)) {
+            handlers[opt](optarg);
+        } else {
+            std::cerr << "错误：未知选项 -" << static_cast<char>(optopt) << "\n";
+            exit(EXIT_FAILURE);
         }
     }
 }
