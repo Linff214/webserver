@@ -24,24 +24,24 @@ class WebServer
 public:
     WebServer();
     ~WebServer();
-
+ // 初始化函数（配置、线程池、连接池、日志、触发模式）
     void init(int port , string user, string passWord, string databaseName,
               int log_write , int opt_linger, int trigmode, int sql_num,
               int thread_num, int close_log, int actor_model);
 
-    void thread_pool();
-    void sql_pool();
-    void log_write();
-    void trig_mode();
-    void eventListen();
-    void eventLoop();
-    void timer(int connfd, struct sockaddr_in client_address);
+    void thread_pool();   // 线程池初始化
+    void sql_pool();      // MySQL连接池初始化
+    void log_write();     // 日志系统初始化
+    void trig_mode();     // 触发模式设置（ET/LT）
+    void eventListen();  // 启动监听 + epoll + 信号
+    void eventLoop();    // 主事件循环
+    void timer(int connfd, struct sockaddr_in client_address); // 新连接处理、定时器维护
     void adjust_timer(util_timer *timer);
     void deal_timer(util_timer *timer, int sockfd);
-    bool dealclientdata();
-    bool dealwithsignal(bool& timeout, bool& stop_server);
-    void dealwithread(int sockfd);
-    void dealwithwrite(int sockfd);
+    bool dealclientdata();  // epoll事件处理，新客户端连接
+    bool dealwithsignal(bool& timeout, bool& stop_server); // 信号处理
+    void dealwithread(int sockfd);  // 读事件
+    void dealwithwrite(int sockfd); // 写事件
 
 public:
     //基础
