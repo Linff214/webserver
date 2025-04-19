@@ -1,6 +1,8 @@
 #include <string.h>
 #include <time.h>
 #include <sys/time.h>
+#include <sys/stat.h>  // mkdir
+#include <unistd.h>
 #include <stdarg.h>
 #include "log.h"
 #include <pthread.h>
@@ -41,6 +43,17 @@ bool Log::init(const char *file_name, int close_log, int log_buf_size, int split
     time_t t = time(NULL);
     struct tm *sys_tm = localtime(&t);
     struct tm my_tm = *sys_tm;
+    // 构造 ./log/YYYY_MM 路径
+    char month_dir[128] = {0};
+    snprintf(month_dir, sizeof(month_dir), "./log/%d_%02d", my_tm.tm_year + 1900, my_tm.tm_mon + 1);
+
+    // 创建该目录（若不存在）
+    mkdir("./log", 0777); // 确保 ./log 目录存在
+    mkdir(month_dir, 0777); // 创建 ./log/YYYY_MM 目录
+
+    // 更新 dir_name 为新目录
+    strcpy(dir_name, month_dir);
+    strcat(dir_name, "/");
 
  
     const char *p = strrchr(file_name, '/');
